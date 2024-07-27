@@ -1,0 +1,112 @@
+In this week we are learning the Java Script topics 
+
+    1. Data Types 
+    2. Loops
+    3. Branching 
+
+
+Agenda 
+    1. Arrays 
+        let a = 5; // variable named as 'a' which is storing a single integer value 5 
+        let b = 10;// variable named as 'b' which is storing a single integer value 10
+        let c = 15;// variable named as 'c' which is storing a single integer value 15
+
+        I need a variable to store 100 integer values 
+
+        Special kind of an object that stores a collection of items or data or value 
+
+        var nums1 = [ 1, 2, 3, 4, 5, 6 ];            // Literal Notation 
+        var nums2 = new Array( 1, 2, 3, 4, 5, 6 );  // Array Constructor 
+
+        console.log( a );        // output: 5
+      
+
+        Index of an array 
+            is an unique number which is used to access the element from the given array 
+            Example:    
+                    var nums1 = [ 10, 20, 30, 40, 50, 60 ]; 
+                        Index     0   1   2   3   4   5 
+
+                        last index value = length - 1 
+                        Index values of any array starts with number 0 
+
+                        console.log( nums1[ 3 ]  );     // output: 40
+                    
+
+    2. Strings 
+        var d = 'a';        // 'a' -> character 
+
+        var e = 'Great Learning';   // 'Great Learning' -> Group of characters 
+                                                        -> String 
+    
+        The string is sequence of characters which are enclosed in between ' ' or " "
+        var e = 'Great Learning';       // Great Learning is string 
+        var f = "Great Learning";       // Great Learning is string 
+
+        Functionalities 
+                1. String Length 
+                    var str = "Hello World";
+                            length = 11 
+
+                    console.log( str.length );  // length of the string = 11 
+
+                2. Accessing the character 
+                    var str = "H  e  l  l  o     W  o  r  l  d";
+                        Index: 0  1  2  3  4  5  6  7  8  9  10
+                        In string to access any character from the given string 
+                        we can the use of index 
+
+                        console.log( str[ 4 ] );       // output: o
+
+                3. Concatenation 
+                        var str1 = "Hello";
+                        var str2 = " World"; 
+
+                    // using + operator 
+                        var concatinated_String = str1 + str2; 
+                        console.log(concatinated_String)  // output: Hello World
+
+                    // using template literals 
+                        var concatinated_String = `$(str1)$(str2)`;
+                        console.log(concatinated_String)  // output: Hello World
+
+                4. String Methods 
+                    var str3 = "abcdEFGHijkl";
+                    var subStr = efgh
+
+                        toLowerCase();  // output: abcdefghijkl
+                        toUpperCase();  // output: ABCDEFGHIJKL 
+
+                        str3.indexOf(d); // output: 3 
+                        
+                        subString();
+                        slice();
+                        startsWith();
+                        endsWith();
+
+    3. Functions 
+            build in methods 
+                    functions or methods for which as a developer or coder I don't have 
+                    to write any code. Without writting any code the output will be received 
+
+            user define methods 
+                    Here programmer or the developer or the coder will erite the code for the 
+                    function. Based on the code written by the coder or developer the output will be given 
+
+            function name_of_the_function ( param1, param2 ){
+                // code for the function; 
+            }
+
+            name_of_the_function( param1, param2 );         // Function calling 
+
+
+
+            let a = 5; 
+            let b = 10; 
+
+            function addition( a, b ){
+                var c = a + b; 
+            }
+
+            console.log( c );       // error: c is undefined 
+            console.log( addition( a, b ) );
